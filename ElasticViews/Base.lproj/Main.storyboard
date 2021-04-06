@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ElasticViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taS-7L-FIe">
-                                <rect key="frame" x="0.0" y="12" width="375" height="766"/>
+                                <rect key="frame" x="0.0" y="12" width="390" height="798"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRm-Ad-dqD">
-                                        <rect key="frame" x="18" y="208.66666666666663" width="339" height="116"/>
+                                        <rect key="frame" x="19" y="217.66666666666666" width="352" height="120.33333333333334"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rRm-Ad-dqD" secondAttribute="height" multiplier="187:64" id="DhJ-CJ-puh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3n-Om-6Zu">
+                                        <rect key="frame" x="18.666666666666657" y="412" width="352.66666666666674" height="120.66666666666663"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="V3n-Om-6Zu" secondAttribute="height" multiplier="339:116" id="Kom-qn-3SK"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -31,6 +38,9 @@
                                 <constraints>
                                     <constraint firstItem="rRm-Ad-dqD" firstAttribute="width" secondItem="taS-7L-FIe" secondAttribute="width" multiplier="0.903382" id="13d-nk-N4U"/>
                                     <constraint firstItem="rRm-Ad-dqD" firstAttribute="centerX" secondItem="taS-7L-FIe" secondAttribute="centerX" id="Pz7-5L-myI"/>
+                                    <constraint firstItem="V3n-Om-6Zu" firstAttribute="width" secondItem="taS-7L-FIe" secondAttribute="width" multiplier="0.904" id="Rtp-vp-9Ne"/>
+                                    <constraint firstItem="V3n-Om-6Zu" firstAttribute="centerY" secondItem="rRm-Ad-dqD" secondAttribute="centerY" multiplier="1.7" id="UMv-sI-rYX"/>
+                                    <constraint firstItem="V3n-Om-6Zu" firstAttribute="centerX" secondItem="taS-7L-FIe" secondAttribute="centerX" id="faI-IG-n8B"/>
                                     <constraint firstItem="rRm-Ad-dqD" firstAttribute="top" secondItem="taS-7L-FIe" secondAttribute="bottom" multiplier="223/818" id="fqy-NA-Haf"/>
                                 </constraints>
                             </view>
